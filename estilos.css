@@ -1,0 +1,136 @@
+* {
+  --colorgra: linear-gradient(45deg, #f40909b7, #4c58a7fb, #5235d7a0, #f50707);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  background-image: url("img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+#titulo {
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+h1 {
+  width: 30%;
+  border-bottom: 4px solid #1b296e;
+  display: inline-block;
+  margin: 0;
+  font-size: 3em;
+}
+
+.tran-h1 {
+  background-image: var(--colorgra);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#main {
+  width: 80%;
+  min-height: 80%;
+  padding: 30px 0;
+  background-color: rgba(200, 200, 200, 0.2);
+  border-radius: 15px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imagen-container {
+  padding: 20px;
+  background-color: rgba(1, 38, 125, 0.216);
+  border-radius: 30px;
+}
+
+#imagen {
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+#play-word {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#play-word span {
+  flex-wrap: wrap;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  margin: 10px;
+  border: 3px solid white;
+  color: wheat;
+  background-color: #0007;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#jugar {
+  margin: auto;
+  border: #fff;
+}
+
+.palabras-con {
+  display: flex;
+  flex-direction: column;
+}
+
+#letras {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 9px;
+}
+
+button {
+  background-color: #1b296e;
+  color: white;
+  font-size: 24px;
+  padding: 15px 15px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 5px 5px 5px rgb(174, 169, 169);
+}
+
+.item {
+  width: 50px;
+  height: 60px;
+  padding: 0;
+  border: 3px solid white;
+}
+
+button:disabled {
+  color: black;
+  background-color: white;
+  font-size: 24px;
+  padding: 15px 15px;
+}
+
+.contenedor_resultado {
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  background-color: #3335;
+}
+
+#resultado {
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+  color: crimson;
+  font-weight: bold;
+  display: inline-block;
+}
